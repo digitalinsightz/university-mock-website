@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <title>University Website Mockup | Digital Insightz</title>
+</head>
+<body>
+    <header class="jumbotron">
+        <nav>
+            <a href="index.html"><img src="./resources/images/logo.png" alt="Eduford logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Welcome to the largest college ever constructed on this side of heaven. <br>If you are looking to enroll either in-person or online, have a look at what amazing courses we have to offer!</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </header>
+
+<!-- Footer Section -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Eduford University was founded in 1909 by Reginald Eduford. His vision to help the underprivileged is a vision we share today. <br><br>As of today, we have had over 2.5 million students in-person and another 1.5 online. We are excited to continue to grow and look forward to the future of our amazing students.</p>
+    <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-youtube"></i>
+    </div>
+    <p>Website Designed by <i class="bi bi-laptop"> </i><a href="https://www.digitalinsightz.com">Digital Insightz</a></p>
+</section>
+
+
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
